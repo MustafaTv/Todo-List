@@ -1,13 +1,10 @@
 import './style.css';
 import projectAdd from './project';
 import taskAdd from './task';
+import removeTask from './remove-task';
+import removeProject from './remove-project';
 
-const addProject = document.querySelector('#projectAdd');
-addProject.addEventListener('click', () => {
-    projectAdd();
-});
-
-const addTask = document.querySelector('#taskAdd');
-addTask.addEventListener('click', () => {
-    taskAdd();
-});
+projectAdd();
+taskAdd();
+removeTask();
+removeProject();

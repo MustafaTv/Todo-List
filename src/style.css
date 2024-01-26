@@ -28,7 +28,7 @@ a {
 .sidebar {
     width: 20%;
     height: 95vh;
-    background-color: rgb(129, 129, 129);
+    background-color: rgb(169, 169, 169);
 }
 
 .logo {
@@ -56,6 +56,7 @@ a {
 
 .projects > li {
     font-size: 20px;
+    display: fle;
 }
 
 svg {
@@ -115,6 +116,18 @@ svg {
     text-shadow: 2px 0px 2px black;
 }
 
+.projectEdit > img {
+    height: 40px;
+}
+
+.projectEdit {
+    margin: auto;
+    height: 40px;
+    background-color: rgb(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+}
+
 .taskContainer {
     margin-left: 1.5%;
     margin-top: 1%;
@@ -130,7 +143,7 @@ svg {
     margin-left: 2%;
 }
 
-.task, .taskDate, .taskEdit, .deleteTask {
+.task, .taskDate, .taskEdit {
     align-self: center;
     color: white;
     text-shadow: 2px 0px 2px black;
@@ -138,7 +151,7 @@ svg {
 
 .task {
     margin-left: 1%;
-    margin-right: 68%;
+    margin-right: 45%;
 }
 
 .taskDate {
@@ -158,4 +171,44 @@ svg {
     border: 1px solid black;
     height: 40px;
     font-size: 17px;
+}
+
+.taskContainer > button {
+    margin: auto;
+    height: 30px;
+    background-color: rgb(255, 255, 255, 0);
+    border: none;
+}
+
+.deleteTask > img {
+    height: 30px;
+}
+
+li > button {
+    margin: 0 auto;
+    height: 30px;
+    background-color: rgb(255, 255, 255, 0);
+    border: none;
+}
+
+.deleteProject > img {
+    height: 30px;
+}
+
+.deleteProject {
+    display: flex;
+}
+
+.taskEdit > img {
+    height: 30px;
+}
+
+input[type='text'] {
+    padding: 8px;
+    width: 300px;
+    border: none;
+}
+
+input[type='date'] {
+    padding: 5px;
 }
