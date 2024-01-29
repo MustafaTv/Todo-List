@@ -56,7 +56,7 @@ a {
 
 .projects > li {
     font-size: 20px;
-    display: fle;
+    text-align: center;
 }
 
 svg {
@@ -107,25 +107,6 @@ svg {
     margin-bottom: 3%;
     width: 50%;
     margin-right: 43%;
-}
-
-.titleEdit {
-    margin-top: 3%;
-    text-align: right;
-    font-size: 15px;
-    text-shadow: 2px 0px 2px black;
-}
-
-.projectEdit > img {
-    height: 40px;
-}
-
-.projectEdit {
-    margin: auto;
-    height: 40px;
-    background-color: rgb(255, 255, 255, 0.1);
-    border: none;
-    border-radius: 10px;
 }
 
 .taskContainer {
@@ -192,11 +173,7 @@ li > button {
 }
 
 .deleteProject > img {
-    height: 30px;
-}
-
-.deleteProject {
-    display: flex;
+    height: 25px;
 }
 
 .taskEdit > img {
