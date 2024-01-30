@@ -6,12 +6,17 @@ function projectAdd() {
         const projects = document.querySelector('.projects');
         const newListProject = document.createElement('li');
         const newProject = document.createElement('a');
-        const title = document.querySelector('.title');
-        const titleH = title.querySelector('h1');
-        const projectTitle = titleH.innerHTML;
         newProject.href = '#';
         newProject.id = 'todo';
-        newProject.textContent = projectTitle;
+        const projectName = document.createElement('input');
+        projectName.id = 'projectName';
+        projectName.type = 'text';
+        projectName.placeholder = 'Project Name'
+        newProject.appendChild(projectName);
+        const newSubmit = document.createElement('button');
+        newSubmit.id = 'submit';
+        newSubmit.textContent = 'Submit';
+        newProject.appendChild(newSubmit);
         newListProject.appendChild(newProject);
         const deleteTask = document.createElement('button');
         deleteTask.classList.add('deleteProject');

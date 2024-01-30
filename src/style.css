@@ -29,6 +29,7 @@ a {
     width: 20%;
     height: 95vh;
     background-color: rgb(169, 169, 169);
+    text-align: center;
 }
 
 .logo {
@@ -59,12 +60,19 @@ a {
     text-align: center;
 }
 
+#submit {
+    background-color: white;
+    height: 25px;
+    margin-left: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
 svg {
     height: 25px;
 }
 
 #projectAdd {
-    margin-left: 22%;
     margin-top: 5%;
     font-size: 20px;
     font-weight: bold;
@@ -116,23 +124,25 @@ svg {
     height: 50px;
     border: 2px solid black;
     border-radius: 10px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 0.3fr 5fr 0.7fr 0.3fr 0.3fr;
 }
 
 #completed {
     width: 30px;
-    margin-left: 2%;
+    justify-self: center;
 }
 
 .task, .taskDate, .taskEdit {
+    justify-self: center;
     align-self: center;
     color: white;
     text-shadow: 2px 0px 2px black;
 }
 
 .task {
-    margin-left: 1%;
-    margin-right: 45%;
+
+    justify-self: start;
 }
 
 .taskDate {
@@ -180,7 +190,7 @@ li > button {
     height: 30px;
 }
 
-input[type='text'] {
+.task > input[type='text'] {
     padding: 8px;
     width: 300px;
     border: none;
@@ -188,4 +198,11 @@ input[type='text'] {
 
 input[type='date'] {
     padding: 5px;
+}
+
+#todo > input[type='text'] {
+    padding: 8px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
 }
