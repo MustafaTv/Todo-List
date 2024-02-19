@@ -6,60 +6,20 @@
     <title>Todo List</title>
 </head>
     <body>
-        <div id="body">
-            <div class="sidebar">
-                <div class="logo">
-                    <h1>To-Do List</h1>
-                </div>
-                <div class="dates">
-                    <li><a id="home" href="#">Home</a></li>
-                    <li><a id="today" href="#">Today</a></li>
-                    <li><a id="week" href="#">This Week</a></li>
-                </div>
-                <div class="projects">
-                    <h1> Projects </h1>
-                    <li>
-                        <a id="todo" href="#"><input id="projectName" type="text" placeholder="Project Name"><button id="submit">Submit</button></a>
-                        <button class="deleteProject"><img src="file:///Users/samy/repos/Todo-List/dist/svg/trash.svg"></button>
-                    </li>
-                </div>
-                <button id="projectAdd">+ Add Project</button>
+        <div class="header">
+            <h1>Todo List</h1>
+            <div class="creation">
+                <input type="checkbox" id="completeHeader"><input class="taskName" type="text" placeholder="Task Name"><button id="submit">Submit</button>
             </div>
-            <div class="main">
-                <div class="projectInfoContainer">
-                    <div class="title" contenteditable="true">
-                        <h1>Example Project (click to edit)</h1>
-                        <h3>Example Description</h3>
-                    </div>
-                </div>
-                <div id="taskList">
-                    <div class="taskContainer">
-                        <input type="checkbox" id="completed">
-                        <div class="task"><input class="taskName" type="text" placeholder="Task Name"></div>
-                        <div class="taskDate"><input type="date" placeholder="01/26/2024" onfocus="(this.type='date')"></div>
-                        <button class="taskEdit"><img src="file:///Users/samy/repos/Todo-List/dist/svg/pen.svg"></button>
-                        <button class="deleteTask"><img src="file:///Users/samy/repos/Todo-List/dist/svg/trash.svg"></button>
-                    </div>
-                </div>
-                <button id="taskAdd">+ Add Task</button>
-            </div>
-
         </div>
-        <div class="footer">Copyright © 2024 Samy Chattali</div>
+        <div class="todos">
+            <div class="box">
+                <li><input type="checkbox" id="completed"><span>Example todo task </span><button class="deleteTask">Delete</button></li>
+            </div>
+        </div>
+        <div id="footer">
+            Copyright © 2024 Samy Chattali
+        </div>
         <script src="main.js"></script>
     </body>
 </html>
-
-<!-- 
-    1. Build out UI [ X ]
-        1.1 Import new font [ X ]
-    2. Create Modules for each function [  ]
-        2.1 Add projects [  ]
-        2.2 Add tasks (Title, Desc, Due, Priority, Notes, Checklist) [  ]
-        2.3 Change data in tasks [  ]
-        2.4 Remove tasks [  ]
-        2.5 Potentially other options [  ]
-    3. Link everything in index.js [  ]
-    4. Add local storage function [  ]
-    5. Push to github [  ]
--->

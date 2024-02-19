@@ -4,205 +4,97 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#body {
+body {
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-a:link { 
-    text-decoration: none; 
-  } 
-  a:visited { 
-    text-decoration: none; 
-  } 
-  a:hover { 
-    text-decoration: none; 
-  } 
-  a:active { 
-    text-decoration: none; 
-  }
+.header {
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(151, 151, 151);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-a {
+h1 {
     color: white;
 }
 
-.sidebar {
-    width: 20%;
-    height: 95vh;
-    background-color: rgb(169, 169, 169);
-    text-align: center;
-}
-
-.logo {
-    text-align: center;
-    margin-top: 5%;
-    text-shadow: 2px 0px 2px white;
-}
-
-.dates {
-    font-size: 20px;
-    margin-top: 10%;
-    line-height: 2;
-    text-align: center;
-}
-
-.projects {
-    margin-top: 10%;
-    text-align: center;
-    line-height: 2;
-}
-
-.projects > h1 {
-    text-shadow: 2px 0px 2px white;
-}
-
-.projects > li {
-    font-size: 20px;
-    text-align: center;
-}
-
-#submit {
+.creation {
+    margin-top: 1%;
     background-color: white;
-    height: 25px;
-    margin-left: 2%;
-    border: 1px solid black;
+    height: 10vh;
+    width: 85vh;
     border-radius: 10px;
-}
-
-svg {
-    height: 25px;
-}
-
-#projectAdd {
-    margin-top: 5%;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    height: 50px;
-    width: 150px;
-    border: 1px solid black;
-}
-
-.main {
-    height: 95vh;
-    width: 80%;
-    background-color: rgb(109, 109, 109);
-}
-
-.footer {
     display: flex;
     align-items: center;
-    justify-content: center; 
-    width: 100%;
-    height: 5vh;
-    color: white;
-    background-color: black;
+    border: 1px solid black;
 }
 
-.projectInfoContainer {
-    display: flex;
-}
-
-.title > h1, h3 {
-    margin-left: 3%;
-    line-height: 1.4;
-    color: white;
-    text-shadow: 2px 0px 2px black;
-}
-
-.title {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    width: 50%;
-    margin-right: 43%;
-}
-
-.taskContainer {
-    margin-left: 1.5%;
-    margin-top: 1%;
-    width: 95%;
-    height: 50px;
-    border: 2px solid black;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 0.3fr 5fr 0.7fr 0.3fr 0.3fr;
+#completeHeader {
+    margin: 4%;
+    transform: scale(2);
+    pointer-events: none;
 }
 
 #completed {
-    width: 30px;
-    justify-self: center;
+    margin: 4%;
+    transform: scale(2);
 }
 
-.task, .taskDate, .taskEdit {
-    justify-self: center;
-    align-self: center;
-    color: white;
-    text-shadow: 2px 0px 2px black;
+.taskName {
+    margin-right: 4%;
+    width: 70%;
+    height: 45%;
 }
 
-.task {
-
-    justify-self: start;
-}
-
-.taskDate {
-    margin-right: 1%;
-}
-
-.taskEdit {
-    margin-right: 1%;
-}
-
-#taskAdd {
-    margin-top: 2%;
-    margin-left: 88%;
-    font-weight: bold;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255);
+#submit {
+    height: 30px;
+    width: 80px;
+    margin-right: 2%;
+    border-radius: 5px;
     border: 1px solid black;
-    height: 40px;
-    font-size: 17px;
+    background-color: rgb(238, 238, 238);
 }
 
-.taskContainer > button {
+.todos {
+    margin-top: 1%;
+}
+
+.box {
     margin: auto;
-    height: 30px;
-    background-color: rgb(255, 255, 255, 0);
-    border: none;
-}
-
-.deleteTask > img {
-    height: 30px;
-}
-
-li > button {
-    margin: 0 auto;
-    height: 30px;
-    background-color: rgb(255, 255, 255, 0);
-    border: none;
-}
-
-.deleteProject > img {
-    height: 25px;
-}
-
-.taskEdit > img {
-    height: 30px;
-}
-
-.task > input[type='text'] {
-    padding: 8px;
-    width: 300px;
-    border: none;
-}
-
-input[type='date'] {
-    padding: 5px;
-}
-
-#todo > input[type='text'] {
-    padding: 8px;
-    width: 200px;
-    border: none;
+    text-align: left;
+    padding-left: 1%;
+    background-color: rgb(235, 235, 235);
+    width: 33vw;
+    height: 70vh;
+    border: 1px solid black;
     border-radius: 10px;
 }
+
+.deleteTask {
+    margin-left: 2%;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 4%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
